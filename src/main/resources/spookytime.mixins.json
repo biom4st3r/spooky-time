@@ -13,13 +13,16 @@
 		"SkeletonEntityMixin",
 		"ZombieEntityMixin",
 		"LivingEntityMixin",
-		"PlayerEntityMixin"
+		"PlayerEntityMixin",
+		"ItemsMxn"
 	],
 	"client": [
 		"client.ItemDynamicRendererMixin",
 		"client.ClientPlayNetworkHandlerMixin",
 		"client.MinecraftClientMixin",
-		"client.FirstPersonRendererMixin"
+		"client.FirstPersonRendererMixin",
+		"IronGolemModelMxn",
+		"IronGolemRendererMxn"
 	],
 	"injectors": {
 		"defaultRequire": 1
