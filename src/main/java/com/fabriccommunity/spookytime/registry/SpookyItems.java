@@ -14,7 +14,9 @@ import net.minecraft.util.registry.Registry;
 
 import com.fabriccommunity.spookytime.SpookyTime;
 import com.fabriccommunity.spookytime.item.CandyItem;
+import com.fabriccommunity.spookytime.item.CarvedPumpkinItem;
 import com.fabriccommunity.spookytime.item.GoldenCandyCornItem;
+import com.fabriccommunity.spookytime.item.JackoLanternItem;
 import com.fabriccommunity.spookytime.item.PumpkinRing;
 import com.fabriccommunity.spookytime.item.SkirtCostume;
 import com.fabriccommunity.spookytime.item.SpookyTrumpetItem;
@@ -50,9 +52,16 @@ public class SpookyItems {
 	public static final Item GOLD_CLUB = register("gold_club", new ClubItem(ToolMaterials.GOLD, 9, -3.6F, newSettings().maxCount(1)));
 	public static final Item DIAMOND_CLUB = register("diamond_club", new ClubItem(ToolMaterials.DIAMOND, 9, -3.6F, newSettings().maxCount(1)));
 	public static final Item GOLDEN_CANDY_CORN = register("golden_candy_corn", new GoldenCandyCornItem(newSettings().maxDamage(250), 1, 0.25f));
+	public static final Item CARVED_PUMPKIN = replaceItem(Items.CARVED_PUMPKIN, new CarvedPumpkinItem());
+	public static final Item JACK_O_LANTERN = replaceItem(Items.JACK_O_LANTERN, new JackoLanternItem());
 	
 	private SpookyItems() {
 		// NO-OP
+	}
+
+	private static Item replaceItem(Item original, Item newItem)
+	{
+		return Registry.ITEM.set(Registry.ITEM.getRawId(original), Registry.ITEM.getId(original), newItem);
 	}
 	
 	private static Item.Settings newSettings() {

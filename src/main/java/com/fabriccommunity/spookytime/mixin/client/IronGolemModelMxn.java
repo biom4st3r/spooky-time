@@ -18,7 +18,7 @@ import net.minecraft.util.DefaultedList;
 
 public abstract class IronGolemModelMxn implements ModelWithHead {
 
-    private Cuboid headwear;
+    private Cuboid headwear;//IronGolemEntity
 
     @Shadow
     @Final
