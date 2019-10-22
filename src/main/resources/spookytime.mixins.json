@@ -14,7 +14,10 @@
 		"ZombieEntityMixin",
 		"LivingEntityMixin",
 		"PlayerEntityMixin",
+<<<<<<< HEAD
 		"VillagerTaskListProviderMxn",
+=======
+>>>>>>> 9a74e414e3c480a4aa1dcb6acaddf45626c5ed93
 		"ItemsMxn"
 	],
 	"client": [
@@ -22,8 +25,13 @@
 		"client.ClientPlayNetworkHandlerMixin",
 		"client.MinecraftClientMixin",
 		"client.FirstPersonRendererMixin",
+<<<<<<< HEAD
 		"client.IronGolemModelMxn",
 		"client.IronGolemRendererMxn"
+=======
+		"IronGolemModelMxn",
+		"IronGolemRendererMxn"
+>>>>>>> 9a74e414e3c480a4aa1dcb6acaddf45626c5ed93
 	],
 	"injectors": {
 		"defaultRequire": 1
